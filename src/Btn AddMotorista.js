@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
-import styled from "styled-components";
-
+//import './Btn AddMotorista.css';
 
 class BtnAddMotorista extends Component {
     render(){
         return(
 
             <div>
-
+<a>
   <div className="row">
 
             <div className="form-group col-md-4">
@@ -27,7 +26,7 @@ class BtnAddMotorista extends Component {
 
           <div className="form-group col-md-2">
             <label for="Confirmepassword">Confirmar Senha:</label>
-            <input type="Confirmepassword" class="form-control" id="Confirmepassword"></input>
+            <input type="password" class="form-control" id="Confirmepassword"></input>
           </div>
 
           <div className="form-group col-md-2">
@@ -43,8 +42,8 @@ class BtnAddMotorista extends Component {
           <div className ="form-group col-md-2">
           <label for="Sexo1">Sexo:</label>
           <select class="form-control" id="Sexo1">
-            <option>Masculino</option>
-            <option>Feminino</option>
+            <option value = "Masculino" >Masculino</option>
+            <option value = "Feminino">Feminino</option>
           </select>
         </div>
 
@@ -68,33 +67,33 @@ class BtnAddMotorista extends Component {
         <div class="form-group col-md-2">
           <label for="inputEstado">Estado:</label>
           <select id="inputEstado" class="form-control">
-                <option>Acre(AC)</option>
-                <option>Alagoas(AL) </option>
-                <option>Amapá(AP) </option>
-                <option>Amazonas(AM) </option>
-                <option>Bahia(BA)</option>
-                <option>Ceará(CE) </option>
-                <option>Distrito Federal(DF) </option>
-                <option>Espírito Santo(ES) </option>
-                <option>Goiás(GO)</option>
-                <option>Maranhão(MA) </option>
-                <option>Mato Grosso(MT) </option>
-                <option>Mato Grosso do Sul(MS) </option>
-                <option>Minas Gerais(MG)</option>
-                <option>Pará(PA) </option>
-                <option>Paraíba(PB)</option>
-                <option>Paraná(PR) </option>
-                <option>Pernambuco(PE)</option>
-                <option>Piauí(PI) </option>
-                <option>Rio de Janeiro(RJ) </option>
-                <option>Rio Grande do Norte(RN)</option>
-                <option>Rio Grande do Sul(RS) </option>
-                <option>Rondônia(RO) </option>
-                <option>Roraima(RR)</option>
-                <option>Santa Catarina(SC) </option>
-                <option>São Paulo(SP)</option>
-                <option>Sergipe(SE) </option>
-                <option>Tocantins(TO) </option>
+                <option value = "Acre(AC)">Acre(AC)</option>
+                <option value = "Alagoas(AL)">Alagoas(AL) </option>
+                <option value = "Amapá(AP)">Amapá(AP) </option>
+                <option value = "Amazonas(AM)">Amazonas(AM) </option>
+                <option value = "Bahia(BA)">Bahia(BA)</option>
+                <option value = "Ceará(CE)">Ceará(CE) </option>
+                <option value = "Distrito Federal(DF)">Distrito Federal(DF) </option>
+                <option value = "Espírito Santo(ES)">Espírito Santo(ES) </option>
+                <option value = "Goiás(GO)">Goiás(GO)</option>
+                <option value = "Maranhão(MA)">Maranhão(MA) </option>
+                <option value = "Mato Grosso(MT)">Mato Grosso(MT) </option>
+                <option value = "Mato Grosso do Sul(MS)">Mato Grosso do Sul(MS) </option>
+                <option value = "Minas Gerais(MG)">Minas Gerais(MG)</option>
+                <option value = "Pará(PA)">Pará(PA) </option>
+                <option value = "Paraíba(PB)">Paraíba(PB)</option>
+                <option value = "Paraná(PR)">Paraná(PR) </option>
+                <option value = "Pernambuco(PE)">Pernambuco(PE)</option>
+                <option value = "Piauí(PI)">Piauí(PI) </option>
+                <option value = "Rio de Janeiro(RJ)">Rio de Janeiro(RJ) </option>
+                <option value = "Rio Grande do Norte(RN)">Rio Grande do Norte(RN)</option>
+                <option value = "Rio Grande do Sul(RS)">Rio Grande do Sul(RS) </option>
+                <option value = "Rondônia(RO)">Rondônia(RO) </option>
+                <option value = "Roraima(RR)">Roraima(RR)</option>
+                <option value = "Santa Catarina(SC)">Santa Catarina(SC) </option>
+                <option value = "São Paulo(SP)">São Paulo(SP)</option>
+                <option value = "Sergipe(SE)">Sergipe(SE) </option>
+                <option value = "Tocantins(TO)">Tocantins(TO) </option>
           </select>
         </div>
 
@@ -102,11 +101,17 @@ class BtnAddMotorista extends Component {
           <label for="inputCEP">CEP:</label>
           <input type="text" class="form-control" id="inputCEP" placeholder="00000-000"></input>
         </div>
+
+        <div class="form-group col-md-2">
+          <label for="inputAbilitação">Abilitação:</label>
+          <input type="text" class="form-control" id="inputAbilitação" placeholder="A,B,C,D ou E"></input>
+        </div>
   
           </div>
           <button type="submit" class="btn btn-success" size="lg">Add</button>
           <button type="submit" class="btn btn-primary" size="lg">Menu</button>
-          <button type="submit" class="btn btn-primary" size="lg">Voltar</button>
+          <button type="submit" class="btn btn-info" size="lg">Voltar</button>
+          </a>
   </div>
 
 

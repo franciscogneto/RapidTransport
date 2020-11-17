@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
+//import './Select Viagem.css';
 
-class SelectMotorista extends Component {
+class SelectViagem extends Component {
     render(){
         return(
 <div>
@@ -12,7 +13,7 @@ class SelectMotorista extends Component {
   </div>
   <div class="card-body">
 
-      <div>Status do Motorista</div>
+      <div>Status da Viagem</div>
 
   <div class="form-check form-check-inline">
   <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="opcao1"></input>
@@ -27,17 +28,20 @@ class SelectMotorista extends Component {
   <label class="form-check-label" for="inlineRadio2">Aguardando Viagem</label>
 </div>
 
+<div class="card-body">
+ 
+ <a type="submit" class="btn btn-primary">Veiculo</a>
+ <a type="submit" class="btn btn-primary">Motorista</a>
+ <a type="submit" class="btn btn-danger">Relatório</a>
+ <a type="submit" class="btn btn-primary">Alterar</a>
+</div>
+
   </div>
 </div>
-<c>
-<button type="submit" class="btn btn-primary">Veículo</button>
-<button type="submit" class="btn btn-primary">Viagem</button>
-<button type="submit" class="btn btn-danger">Excluir</button>
-</c>
 
 <b>
-<button type="submit" class="btn btn-primary">Menu</button>
-<button type="submit" class="btn btn-primary">Voltar</button>
+<button type="submit" class="btn btn-success">Menu</button>
+<button type="submit" class="btn btn-info">Voltar</button>
 </b>
 </form>
   </div>
@@ -46,4 +50,4 @@ class SelectMotorista extends Component {
     }
 }
 
-export default SelectMotorista;
+export default SelectViagem;

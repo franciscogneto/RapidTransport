@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+//import './Btn Veiculo.css';
 
 class BtnVeiculo extends Component {
     render(){
@@ -6,9 +7,9 @@ class BtnVeiculo extends Component {
 <div>
     <form>
       <div className="form-group">
-        <input type="password" class="form-control" id="inputPassword" placeholder="Pesquisa de Veículo"></input>
+        <input type="text" class="form-control" id="inputtext" placeholder="Pesquisa de Veículo"></input>
       </div>
-      <button type="submit" class="btn btn-primary">Pesquisar</button>
+      <button type="submit" class="btn btn-primary rounded mx-auto d-block">Pesquisar</button>
     </form>
 
 
@@ -19,11 +20,11 @@ class BtnVeiculo extends Component {
   </div>
   <div class="card-body">
  
-    <a href="#" class="btn btn-primary">Add Veiculo</a>
+    <a type="submit" class="btn btn-primary">Add Veiculo</a>
   </div>
 </div>
 <a>
-<button type="submit" class="btn btn-primary">Voltar</button>
+<button type="submit" class="btn btn-info">Voltar</button>
 </a>
   </div>
 

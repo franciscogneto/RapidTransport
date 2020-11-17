@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Button, ButtonGroup } from 'reactstrap';
-
+//import './Btn ViagemMotorista.css';
 
 const BtnViagemMotorista = (props) => {
     const [rSelected, setRSelected] = useState(null);
@@ -81,9 +81,9 @@ const BtnViagemMotorista = (props) => {
       </div>
 
 
-        <button type="submit" class="btn btn-success" size="lg">Enviar</button>
+        <button type="submit" class="btn btn-success rounded mx-auto d-block">Enviar</button>
 
-        <button type="submit" class="btn btn-primary" size="lg">Voltar</button>
+        <button type="submit" class="btn btn-info float-right">Voltar</button>
   
      
       </div>

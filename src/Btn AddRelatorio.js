@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import styled from "styled-components";
-
+//import './Btn AddRelatorio.css';
 
 class BtnAddRelatorio extends Component {
     render(){
@@ -53,7 +52,7 @@ class BtnAddRelatorio extends Component {
 
       <button type="submit" class="btn btn-primary" size="lg">Menu</button>
 
-      <button type="submit" class="btn btn-primary" size="lg">Voltar</button>
+      <button type="submit" class="btn btn-info" size="lg">Voltar</button>
 
 
 </div>

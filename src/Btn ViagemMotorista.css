@@ -1,0 +1,23 @@
+.primary{
+    margin-left: 80px;
+}
+
+div{
+    text-align: center;
+    color:white;
+}
+
+.btn-info{
+
+    position: absolute;
+    bottom: -170px;
+    right: 20px;
+    font-size: 18px;
+    display: block;
+    margin: 0 auto;
+    width: 120px;
+    height: 36px;
+    border-radius: 60px;
+    font-size: 15px;
+    cursor: pointer;
+}
