@@ -17,15 +17,13 @@ import BtnAddMotorista from './Btn AddMotorista';
 import BtnAvisos from './Btn Avisos';
 import BtnAvisoME from './Btn AvisoME';
 import SelectViagem from './Select Viagem';
-import Login from './Login';
-
-
+import Login from './Login/Login';
 
 
 ReactDOM.render(
   <React.StrictMode>
  
-    <BtnAddMotorista/>
+    <EmpresaPage/>
 
   </React.StrictMode>,
   document.getElementById('root')

@@ -6,7 +6,11 @@ import BtnViagem from './Btn Viagem';
 import BtnAvisos from './Btn Avisos';
 import BtnVeiculo from './Btn Veiculo';
 import BtnAddVeiculo from "./Btn AddVeiculo";
-//import Switch from "react-switch";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from 'react-router-dom';
 
 
 const Button = styled.button`
@@ -50,6 +54,17 @@ export default function EmpresaPage() {
       <a href = "./Login.js">
         <Button onClick={() => ('/Login')}> Sair </Button>
       </a>
+
+
+      <Router>
+    <Switch>
+<Route path="/" element={<EmpresaPage />}/>
+<Route path="/Btn Motorista" element={<BtnMotorista />}/>
+<Route path="/Btn Relatorio" element={<BtnRelatorio />}/>
+<Route path="/Btn Veiculo" element={<BtnVeiculo />}/>
+
+    </Switch>
+  </Router>
 
       </div>
   );
