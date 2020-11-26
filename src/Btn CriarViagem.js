@@ -1,6 +1,37 @@
 import React, { Component } from 'react';
-//import './Btn CriarViagem.css';
 
+const a = {
+  position: 'absolute',
+  bottom: '-60px',
+  right: '-880px',
+  display: 'block',
+  margin: '0 auto',
+  width: '120px',
+  height: '36px',
+  borderRadius: '60px',
+  fontSize: '15px',
+  cursor: 'pointer'
+}
+
+const b ={
+  position: 'absolute',
+  bottom: '-40px',
+  right: '65px',
+  fontSize: '18px',
+  display: 'block',
+  margin: '0 auto',
+  width: '160px',
+  height: '36px',
+  borderRadius: '60px',
+  fontSize: '15px',
+  cursor: 'pointer'
+}
+
+const group = {
+  textAlign: 'center',
+  marginTop: '40px',
+  color:'white',
+}
 
 class BtnCriarViagem extends Component {
     render(){
@@ -13,17 +44,17 @@ class BtnCriarViagem extends Component {
   </div>
   <div className="col-md-3">
     <form>
-      <div className="form-group">
+      <div style={group} className="form-group">
         <label for="exemplo">Motorista</label>
         <input type="text" class="form-control" id="motorista" placeholder="Nome do Motorista"></input>
       </div>
 
-      <div className="form-group">
+      <div style={group} className="form-group">
         <label for="exemplo">Partida</label>
         <input type="text" class="form-control" id="partida" placeholder="Horário de Partida"></input>
       </div>
 
-      <div className="form-group">
+      <div style={group} className="form-group">
         <label for="exemplo">Tempo de Relatório</label>
         <select class="form-control" id="Tempo de Relatório">
       <option value = "1 Dia">1 Dia</option>
@@ -32,7 +63,7 @@ class BtnCriarViagem extends Component {
     </select>
     </div>
 
-      <div className="form-group">
+      <div style={group} className="form-group">
       <label for="Relatório">Relatório</label>
       <select class="form-control" id="Relatório">
       <option value = "Relatório 1">Relatório 1</option>
@@ -48,7 +79,7 @@ class BtnCriarViagem extends Component {
     </select>
     </div>
 
-    <div class="form-group">
+    <div style={group} className="form-group">
     <label for="Veiculo">Veículo</label>
       <select class="form-control" id="Modelo">
       <option value = "Ford">Ford</option>
@@ -63,12 +94,12 @@ class BtnCriarViagem extends Component {
     </select>
     </div>
 
-    <div className="form-group">
+    <div style={group} className="form-group">
         <label for="exemplo">Destino</label>
         <input type="text" class="form-control" id="inputPassword" placeholder="Destino"></input>
       </div>
 
-      <div className="form-group">
+      <div style={group} className="form-group">
       <label for="Carga">Carga</label>
       <select class="form-control" id="Relatório">
       <option value = "Alimentos Perecíveis">Alimentos Perecíveis</option>
@@ -84,13 +115,19 @@ class BtnCriarViagem extends Component {
     </select>
     </div>
 
-      <div className="form-group">
+      <div style={group} className="form-group">
         <label for="exemplo">Km</label>
         <input type="number" class="form-control" id="inputPassword" placeholder="Km"></input>
       </div>
+      
 
-      <button type="submit" class="btn btn-primary">Adicionar Viagem</button>
-      <button type="submit" class="btn btn-info">Voltar</button>
+      <a href = "./BtnViagem.js">
+      <button style={b} type="submit" class="btn btn-primary">Adicionar Viagem</button>
+      </a>
+
+      <a href = "./BtnAddMotorista.js">
+      <button style={a} type="submit" class="btn btn-info">Voltar</button>
+      </a>
  
     </form>
   </div>

@@ -1,11 +1,29 @@
 import React, { Component } from 'react';
-import styled from "styled-components";
-//import './Btn RelatorioViagem.css';
 
-const form = styled.form`
+const i = {
+  position: 'absolute',
+  bottom: '10px',
+  right: '35px',
+  fontSize: '18px',
+  display: 'block',
+  margin: '0 auto',
+  width: '120px',
+  height: '36px',
+  borderRadius: '60px',
+  fontSize: '15px',
+  cursor: 'pointer',
+}
 
-  margin-left: 7000px;
-`;
+const center = {
+  marginTop: '40px'
+}
+
+const td = {
+
+  color: 'black',
+  textAlign: 'center',
+  fontSize:'15px'
+}
 
 class BtnRelatorioViagem extends Component {
     render(){
@@ -13,24 +31,29 @@ class BtnRelatorioViagem extends Component {
 <div>
     <form>
       <div className="form-group">
-        <input type="text" class="form-control" id="inputtext" placeholder="Pesquisa de Relatório"></input>
+        <input style={center} type="text" class="form-control" id="inputtext" placeholder="Pesquisa de Relatório"></input>
       </div>
       <button type="submit" class="btn btn-primary rounded mx-auto d-block">Pesquisar</button>
     </form>
 
 
-    <div class="card text-center">
+    <div style={center} class="card text-center">
   <div class="card-header">
     Pesquisa de seus Relatórios
   </div>
   <div class="card-body">
- 
-    <a type="submit" class="btn btn-primary">Add Relatório</a>
+  <h2 style={td}> Nenhum relatório adicionado no momento </h2>
+
+    <a href = "./BtnRelatorioViagem.js">
+    <button type="submit" class="btn btn-primary">Add Relatório</button>
+    </a>
+
   </div>
 </div>
-<a>
-<button type="submit" class="btn btn-info">Voltar</button>
+<a href = "./Avisos.js">
+<button style={i} type="submit" class="btn btn-info">Voltar</button>
 </a>
+
   </div>
 
         )

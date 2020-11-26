@@ -1,10 +1,73 @@
 import React, { Component } from 'react';
-//import './Btn AddVeiculo.css';
+
+
+const div = {
+  textAlign: 'center',
+  marginTop: '160px',
+  marginLeft: '240px',
+  color:'white'
+}
+
+const a = {
+  position: 'absolute',
+  bottom: '10px',
+  right: '155px',
+  fontSize: '18px',
+  display: 'block',
+  margin: '0 auto',
+  width: '120px',
+  height: '36px',
+  borderRadius: '60px',
+  fontSize: '15px',
+  cursor: 'pointer'
+}
+
+const b = {
+  position: 'absolute',
+  bottom: '10px',
+  right: '16px',
+  fontSize: '18px',
+  display: 'block',
+  margin: '0 auto',
+  width: '120px',
+  height: '36px',
+  borderRadius: '60px',
+  fontSize: '15px',
+  cursor: 'pointer'
+}
+
+const c = {
+  position: 'absolute',
+  bottom: '230px',
+  right: '980px',
+  fontSize: '18px',
+  display: 'block',
+  margin: '0 auto',
+  width: '120px',
+  height: '36px',
+  borderRadius: '60px',
+  fontSize: '15px',
+  cursor: 'pointer'
+}
+
+const d = {
+  position: 'absolute',
+  bottom: '230px',
+  right: '850px',
+  fontSize: '18px',
+  display: 'block',
+  margin: '0 auto',
+  width: '120px',
+  height: '36px',
+  borderRadius: '60px',
+  fontSize: '15px',
+  cursor: 'pointer'
+}
 
 class BtnAddVeiculo extends Component {
     render(){
         return(
-<div>
+<div style={div}>
   <navbar/>
 <div className="container">
   <div className="row">
@@ -84,14 +147,23 @@ class BtnAddVeiculo extends Component {
       <option value = "Outros">Outros</option>
     </select>
     </div>
-      <a>
-      <button type="submit" class="btn btn-success">Add</button>
-      <button type="submit" class="btn btn-danger">Excluir</button>
+    
+    <form method="post">
+      <button style={c} type="submit" class="btn btn-success">Add</button>
+    </form>
+    
+      <a href = "./BtnAddVeiculo.js">
+      <button style={d} type="submit" class="btn btn-danger">Excluir</button>
       </a>
-      <b>
-      <button type="submit" class="btn btn-primary">Menu</button>
-      <button type="submit" class="btn btn-info">Voltar</button>
-      </b>
+
+      <a href = "./EmpresaPage.js">
+      <button style={b} type="submit" class="btn btn-primary">Menu</button>
+      </a>
+
+      <a href = "./Login.js">
+      <button style={a} type="submit" class="btn btn-info">Voltar</button>
+      </a>
+
     </form>
 
     </div>

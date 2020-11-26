@@ -1,5 +1,30 @@
 import React, { Component } from 'react';
-//import './Btn Veiculo.css';
+
+const i = {
+  position: 'absolute',
+  bottom: '20px',
+  right: '40px',
+  fontSize: '18px',
+  display: 'block',
+  margin: '0 auto',
+  width: '120px',
+  height: '36px',
+  borderRadius: '60px',
+  fontSize: '15px',
+  cursor: 'pointer',
+}
+
+const center = {
+  marginTop: '80px'
+}
+
+const td = {
+
+  color: 'black',
+  textAlign: 'center',
+  fontSize:'15px'
+}
+
 
 class BtnVeiculo extends Component {
     render(){
@@ -7,24 +32,30 @@ class BtnVeiculo extends Component {
 <div>
     <form>
       <div className="form-group">
-        <input type="text" class="form-control" id="inputtext" placeholder="Pesquisa de Veículo"></input>
+        <input type="text" className="form-control" id="inputtext" placeholder="Pesquisa de Veículo"></input>
       </div>
-      <button type="submit" class="btn btn-primary rounded mx-auto d-block">Pesquisar</button>
+
+      <form method="post">
+      <button type="submit" className="btn btn-primary rounded mx-auto d-block">Pesquisar</button>
+    </form>
     </form>
 
 
-
-    <div class="card text-center">
+    <div style={center} className="card text-center">
   <div class="card-header">
     Pesquisar Veículo
   </div>
   <div class="card-body">
- 
-    <a type="submit" class="btn btn-primary">Add Veiculo</a>
+
+  <h2 style={td}> Nenhum veículo encontrado no momento </h2>
+
+     <a href = "./BtnAddVeiculo.js">
+    <button type="submit" className="btn btn-primary">Add Veiculo</button>
+    </a>
   </div>
 </div>
-<a>
-<button type="submit" class="btn btn-info">Voltar</button>
+<a href = "./EmpresaPage.js">
+<button style={i} type="submit" className="btn btn-info">Voltar</button>
 </a>
   </div>
 
